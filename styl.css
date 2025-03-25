@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  .accordion-item {
+    margin-bottom: 20px;
+  }
+
+  .accordion-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .accordion-header:hover {
+    background-color: #0056b3;
+  }
+
+  .accordion-content {
+    display: none;
+    padding: 15px;
+  }
+
+  .accordion-content p {
+    margin: 0;
+    color: #555;
+  }
+
+  .ui-datepicker-header {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .draggable {
+    width: 150px;
+    height: 150px;
+    background-color: #28a745;
+    color: #fff;
+    border-radius: 6px;
+    text-align: center;
+    line-height: 150px;
+    cursor: move;
+  }
+
+  .sortable-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .sortable-list li {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .sortable-list li:hover {
+    background-color: #0056b3;
+  }
+
+  .animated-background {
+    background: linear-gradient(to right, #007bff, #28a745, #ffc107);
+    background-size: 200% auto;
+    animation: gradientAnimation 10s ease infinite;
+  }
+
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted #999;
+    cursor: help;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .progress-label {
+    font-weight: bold;
+    text-shadow: 1px 1px 0 #fff;
+  }
